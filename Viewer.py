@@ -8,16 +8,16 @@ def view(grid):
                 print("  ", end = "")
 
             elif grid[i][j] == Maze1.WALL:
-                print("##", end = "")
+                print("||", end = "")
 
             elif grid[i][j] == Maze1.START:
-                print("^^", end = "")
+                print("**", end = "")
 
             elif grid[i][j] == Maze1.END:
                 print("$$", end = "")
 
             elif grid[i][j] == Maze1.VISITED:
-                print("..", end = "")
+                print("ee", end = "")
 
             else:
                 raise AssertionError
